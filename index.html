@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=7">
 </head>
 <body>
   <div id="scrollProgress" class="scroll-progress"></div>
@@ -63,7 +63,7 @@
         QUERO COMEÇAR
       </a>
       <p class="hero__alert reveal is-visible">
-        <strong>999 MT/mês.</strong> Curso online para iniciantes, com aulas ao vivo e o professor Leonel Roberto Matavele.
+        <strong><s>2997 MT/mês</s> agora 999 MT/mês.</strong> Curso online para iniciantes, com aulas ao vivo e o professor Leonel Roberto Matavele.
       </p>
     </div>
   </header>
@@ -189,8 +189,26 @@
     <section class="section section--grey" id="inclui">
       <div class="container">
         <p class="eyebrow reveal">O QUE COMPRAS</p>
-        <h2 class="section__title reveal">999 MT por mês</h2>
-        <p class="section__lead reveal">Pagas mês a mês e continuas enquanto estiveres a aprender.</p>
+        <div class="urgency reveal">
+          <h2 class="urgency__title">
+            Hoje não pagas <s class="urgency__old">2997 MT/mês</s>
+            <span class="urgency__line">pagas apenas <strong>999 MT/mês</strong></span>
+          </h2>
+          <p class="urgency__caption">Esta condição especial encerra-se em:</p>
+          <div class="countdown" id="countdown" role="timer" aria-live="polite" aria-atomic="true">
+            <div class="countdown__box">
+              <span class="countdown__num" id="cdMin">05</span>
+              <span class="countdown__label">MINUTOS</span>
+            </div>
+            <span class="countdown__sep" aria-hidden="true">:</span>
+            <div class="countdown__box">
+              <span class="countdown__num" id="cdSec">00</span>
+              <span class="countdown__label">SEGUNDOS</span>
+            </div>
+          </div>
+          <a class="btn btn--primary btn--pulse" href="https://wa.me/258879771024?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20KAIZEN%20SPEAK" data-cta="inclui" rel="noopener noreferrer" target="_blank">QUERO COMEÇAR AGORA</a>
+          <p class="section__lead">Pagas mês a mês e continuas enquanto estiveres a aprender.</p>
+        </div>
         <div class="specs">
           <article class="specs__item reveal">
             <strong>Formato</strong>
@@ -242,7 +260,10 @@
         <div class="offer reveal">
           <p class="offer__ribbon">KAIZEN SPEAK™ — CURSO DE INGLÊS ONLINE</p>
           <h2>O teu próximo passo começa aqui.</h2>
-          <p class="offer__price">999 MT <span>por mês</span></p>
+          <p class="offer__price">
+            <s class="price-old">2997 MT/mês</s>
+            999 MT/mês
+          </p>
           <p class="offer__desc">Aulas ao vivo às segundas, quartas e sextas, às 21h, com acompanhamento no grupo de WhatsApp.</p>
           <a class="btn btn--primary btn--big btn--pulse" href="https://wa.me/258879771024?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20KAIZEN%20SPEAK" data-cta="offer" rel="noopener noreferrer" target="_blank">Quero aprender inglês</a>
         </div>
@@ -309,6 +330,8 @@
     <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.02 3C9.4 3 4.02 8.36 4.02 14.96c0 2.1.55 4.15 1.6 5.96L4 29l8.28-2.16A12.05 12.05 0 0 0 16.02 27c6.62 0 12-5.36 12-11.96C28.02 8.36 22.64 3 16.02 3zm6.93 16.9c-.29.82-1.7 1.52-2.36 1.62-.6.09-1.37.13-2.21-.14-.51-.16-1.17-.38-2.02-.74-3.55-1.54-5.86-5.12-6.04-5.36-.18-.24-1.47-1.95-1.47-3.72s.93-2.64 1.26-3c.33-.36.72-.45 1-.45h.72c.23 0 .54-.09.84.64.29.74 1 2.45 1.09 2.63.09.18.15.4.03.64-.12.24-.18.4-.36.61-.18.21-.38.47-.54.63-.18.18-.36.37-.15.72.21.36.93 1.54 2 2.49 1.37 1.22 2.53 1.6 2.89 1.78.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.1.99 2.46 1.17.36.18.6.27.69.42.09.15.09.87-.2 1.69z"/></svg>
   </a>
 
-  <script src="js/main.js?v=5" defer></script>
+  <div id="socialProof" class="proof" aria-live="polite"></div>
+
+  <script src="js/main.js?v=7" defer></script>
 </body>
 </html>
