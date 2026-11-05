@@ -43,6 +43,12 @@
   src="https://www.facebook.com/tr?id=1149340118046699&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+  <script>
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href*="wa.me"]');
+    if(a&&window.fbq){fbq('track','Contact');}
+  });
+  </script>
 </head>
 <body>
   <div id="scrollProgress" class="scroll-progress"></div>
